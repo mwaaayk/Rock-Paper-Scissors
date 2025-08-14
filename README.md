@@ -4,6 +4,7 @@ This is a simple **Rock, Paper, Scissors** game I created using Unity.
 It’s a little project where you play against the computer in a **best-of-5** match. 
 First to score 3 points wins!
 
+Play the game [here](https://rock-paper-scissors-five-black.vercel.app/).
 
 ## 🛠 How to Install Unity on macOS
 
