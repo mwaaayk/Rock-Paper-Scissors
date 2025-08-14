@@ -169,17 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetScore: 3
   _resetTime: 2
-  _playerHand: {fileID: 123876804}
-  _computerHand: {fileID: 430603967}
   _playerScoreHandler: {fileID: 555844316}
   _computerScoreHandler: {fileID: 409465397}
-  _rockSprite: {fileID: 936954296, guid: 0d34ffa4df3f14947b6a111cb2f40add, type: 3}
-  _paperSprite: {fileID: 2024809696, guid: 0d34ffa4df3f14947b6a111cb2f40add, type: 3}
-  _scissorsSprite: {fileID: 989015730, guid: 0d34ffa4df3f14947b6a111cb2f40add, type: 3}
-  _rockButton: {fileID: 2023393649}
-  _paperButton: {fileID: 1171601635}
-  _scissorsButton: {fileID: 1204966059}
-  _animator: {fileID: 1850078007}
   _selectionPanel: {fileID: 878900192}
   _resultHandler: {fileID: 258601409}
   _combatPanel: {fileID: 1957438401}
@@ -10688,6 +10679,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471e222956ccd924aaae7202b8e6ed98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerHand: {fileID: 123876804}
+  _computerHand: {fileID: 430603967}
+  _rockSprite: {fileID: 936954296, guid: 0d34ffa4df3f14947b6a111cb2f40add, type: 3}
+  _paperSprite: {fileID: 2024809696, guid: 0d34ffa4df3f14947b6a111cb2f40add, type: 3}
+  _scissorsSprite: {fileID: 989015730, guid: 0d34ffa4df3f14947b6a111cb2f40add, type: 3}
+  _rockButton: {fileID: 2023393649}
+  _paperButton: {fileID: 1171601635}
+  _scissorsButton: {fileID: 1204966059}
   _gameManager: {fileID: 6216929}
   _whooshSound: {fileID: 1850078009}
 --- !u!82 &1850078009
