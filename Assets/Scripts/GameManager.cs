@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CanvasGroup _combatPanel;
     [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private TextMeshProUGUI _gameOverPanelTitle;
+    [SerializeField] private SoundManager _soundManager;
 
     private int _playerScore = 0;
     private int _computerScore = 0;
@@ -131,12 +132,14 @@ public class GameManager : MonoBehaviour
         {
             _playerScoreHandler.AddScore();
             _playerScore++;
+            _soundManager.PlayWinSound();
             return "You Win!";
         }
         else
         {
             _computerScoreHandler.AddScore();
             _computerScore++;
+            _soundManager.PlayLoseSound();
             return "You Lose!";
         }
     }
@@ -149,7 +152,16 @@ public class GameManager : MonoBehaviour
         if (_playerScore == _targetScore || _computerScore == _targetScore)
         {
             _gameOverPanel.SetActive(true);
-            _gameOverPanelTitle.text = _playerScore > _computerScore ? "VICTORY" : "DEFEAT";
+
+            if (_playerScore > _computerScore)
+            {
+                _soundManager.PlayVictorySound();
+                _gameOverPanelTitle.text = "VICTORY";
+            }
+            else
+            {
+                _gameOverPanelTitle.text = "DEFEAT";
+            }
         }
         else
         {
